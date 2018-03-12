@@ -12,7 +12,7 @@
 
         <!--question-->
         <TextView
-            android:id="@+id/question_eight"
+            android:id="@+id/question_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/q_1"
@@ -70,12 +70,12 @@
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
             android:src="@drawable/quiz_picture" />
+
         <!--progress bar 10-->
         <ProgressBar
             android:id="@+id/progress_bar"
