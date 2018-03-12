@@ -10,51 +10,66 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--question-->
         <TextView
             android:id="@+id/question_eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/q_1"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="@dimen/question_textSize" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!--answer 1-->
             <RadioButton
                 android:id="@+id/q1_ans1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_radioButton"
+                android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="wrongAnswer"
                 android:text="@string/q1_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
+            <!--answer 2-->
             <RadioButton
                 android:id="@+id/q1_ans2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_radioButton"
+                android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="wrongAnswer"
                 android:text="@string/q1_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
+            <!--answer 3-->
             <RadioButton
                 android:id="@+id/q1_ans_correct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_radioButton"
+                android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="goToSecondQuestion"
                 android:text="@string/q1_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
 
+            <!--answer 4-->
             <RadioButton
                 android:id="@+id/q1_ans3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_radioButton"
+                android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="wrongAnswer"
                 android:text="@string/q1_a3"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
+        <!--progress bar 10-->
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
