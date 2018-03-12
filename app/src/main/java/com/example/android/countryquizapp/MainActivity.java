@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+    public void startQuiz(View view) {
+        setContentView(R.layout.question_1);
+    }
+
     //    wrong answer = no points
     public void wrongAnswer(View view) {
         Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();

@@ -43,7 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="430dp"
-            android:text="@string/start_quiz" />
+            android:text="@string/start_quiz"
+            android:onClick="startQuiz"/>
 
         <ProgressBar
             android:id="@+id/progress_bar"
