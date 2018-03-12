@@ -44,7 +44,7 @@
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="wrongAnswer"
-                android:text="@string/q2_a1"
+                android:text="@string/q2_ans1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <!--answer 3-->
@@ -55,7 +55,7 @@
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="goToSecondQuestion"
-                android:text="@string/q2_a2"
+                android:text="@string/q2_ans2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <!--answer 4-->
@@ -66,7 +66,7 @@
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
                 android:onClick="wrongAnswer"
-                android:text="@string/q2_a3"
+                android:text="@string/q2_ans3"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
