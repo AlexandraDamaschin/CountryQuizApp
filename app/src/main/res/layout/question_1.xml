@@ -26,7 +26,7 @@
                 android:id="@+id/q1_a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToSecondQuestion"
+                android:onClick="wrongAnswer"
                 android:text="@string/q1_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -34,21 +34,23 @@
                 android:id="@+id/q1_a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="tryAgain"
+                android:onClick="wrongAnswer"
                 android:text="@string/q1_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
+
             <RadioButton
                 android:id="@+id/q1_a_correct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="tryAgain"
+                android:onClick="goToSecondQuestion"
                 android:text="@string/q1_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
+
             <RadioButton
                 android:id="@+id/q1_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="tryAgain"
+                android:onClick="wrongAnswer"
                 android:text="@string/q1_a3"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
