@@ -32,8 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="300dp"
             android:layout_marginTop="100dp"
-            android:scaleType="center"
-            android:src="@drawable/start">
+            android:scaleType="centerInside"
+            android:src="@drawable/quiz_time">
 
         </ImageView>
 
