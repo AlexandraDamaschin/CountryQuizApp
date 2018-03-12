@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="wrongAnswer"
+                android:onClick="goToThirdQuestion"
                 android:text="@string/q2_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
+                android:onClick="wrongAnswer"
                 android:text="@string/q2_ans2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -76,7 +76,8 @@
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
             android:src="@drawable/quiz_picture" />
-        <!--progress bar 10-->
+
+        <!--progress bar 20-->
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -85,7 +86,7 @@
             android:layout_marginTop="@dimen/marginTop_progressBar"
             android:indeterminate="false"
             android:max="100"
-            android:progress="10" />
+            android:progress="20" />
 
     </LinearLayout>
 
