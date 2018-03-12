@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,10 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     //    wrong answer = no points
     public void wrongAnswer(View view) {
-
+        Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        setContentView(R.layout.question_2);
     }
 
-    //answer correct = points and next question
+    //answer correct = 1 point
     public void goToSecondQuestion(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -28,22 +31,26 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_2);
                     break;
                 }
             case R.id.q1_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_2);
                     break;
                 }
             case R.id.q1_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_2);
                     break;
                 }
 
             case R.id.q1_ans_correct:
                 if (checked) {
                     setContentView(R.layout.question_2);
+                    score++;
                     break;
                 }
         }
