@@ -25,5 +25,6 @@
     <string name="q8_ans_correct">Egypt</string>
     <string name="q9_ans_correct">Italy</string>
     <string name="q10_ans_correct">Russia</string>
+    <string name="wrong_answer">Wrong answer</string>
 
 </resources>
