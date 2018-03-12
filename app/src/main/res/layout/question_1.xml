@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.android.countryquizapp.MainActivity">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q_1"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q1_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToSecondQuestion"
+                android:text="@string/q1_a1"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/q1_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="tryAgain"
+                android:text="@string/q1_a2"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/q1_a_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="tryAgain"
+                android:text="@string/q1_a_correct"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/q1_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="tryAgain"
+                android:text="@string/q1_a3"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="10" />
+
+    </LinearLayout>
+
+</ScrollView>
