@@ -12,18 +12,18 @@
     <string name="q_8">In what country is the Great Pyramid of Giza found?</string>
     <string name="q_9">Leonardo da Vinci was born in what country?</string>
     <string name="q_10">In terms of land area, what is the largest country in the world?</string>
-    <string name="q1_a_correct">India</string>
+    <string name="q1_ans_correct">India</string>
     <string name="q1_a1">Spain</string>
     <string name="q1_a2">USA</string>
     <string name="q1_a3">Scotland</string>
-    <string name="q2_a_correct">Scotland</string>
-    <string name="q3_a_correct">Canada</string>
-    <string name="q4_a_correct">USA</string>
-    <string name="q5_a_correct">New Zealand</string>
-    <string name="q6_a_correct">Greece</string>
-    <string name="q7_a_correct">South Africa</string>
-    <string name="q8_a_correct">Egypt</string>
-    <string name="q9_a_correct">Italy</string>
-    <string name="q10_a_correct">Russia</string>
+    <string name="q2_ans_correct">Scotland</string>
+    <string name="q3_ans_correct">Canada</string>
+    <string name="q4_ans_correct">USA</string>
+    <string name="q5_ans_correct">New Zealand</string>
+    <string name="q6_ans_correct">Greece</string>
+    <string name="q7_ans_correct">South Africa</string>
+    <string name="q8_ans_correct">Egypt</string>
+    <string name="q9_ans_correct">Italy</string>
+    <string name="q10_ans_correct">Russia</string>
 
 </resources>

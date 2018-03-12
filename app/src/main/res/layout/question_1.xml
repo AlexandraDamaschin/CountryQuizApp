@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="tryAgain"
-                android:text="@string/q1_a_correct"
+                android:text="@string/q1_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
                 android:id="@+id/q1_a3"
