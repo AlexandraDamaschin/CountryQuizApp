@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void tryAgain(View view){
+    public void tryAgain(View view) {
         setContentView(R.layout.question_1);
     }
 
@@ -49,26 +49,13 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         switch (view.getId()) {
             //answer correct = 1 point
-            case R.id.q2_ans_correct:
+            case R.id.q1_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_3);
+                    setContentView(R.layout.question_2);
                     score++;
                     break;
                 }
-            case R.id.q2_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    break;
-                }
-            case R.id.q2_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    break;
-                }
-
-            case R.id.q2_ans3:
+            case R.id.q1_ans1 | R.id.q1_ans2 | R.id.q1_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
