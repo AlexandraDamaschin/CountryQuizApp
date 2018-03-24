@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.score);
+        displayScore(score);
     }
 
 
@@ -402,5 +404,11 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
         }
+    }
+
+    // score
+    public void displayScore(int score) {
+        TextView finalScore = findViewById(R.id.score_text);
+        finalScore.setText(String.valueOf(score));
     }
 }

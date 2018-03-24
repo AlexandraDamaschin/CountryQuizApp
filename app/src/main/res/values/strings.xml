@@ -56,4 +56,6 @@
     <string name="try_again">Try again!</string>
     <string name="toast_no_name">Please provide your name</string>
     <string name="correct_answer">Correct answer</string>
+    <string name="score">Your score is</string>
+    <string name="score_text">0</string>
 </resources>
