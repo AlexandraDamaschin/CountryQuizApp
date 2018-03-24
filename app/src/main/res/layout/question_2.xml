@@ -26,6 +26,7 @@
             android:orientation="vertical">
 
             <!--answer 1-->
+            <!--correct-->
             <RadioButton
                 android:id="@+id/q2_ans_correct"
                 android:layout_width="wrap_content"
@@ -37,6 +38,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <!--answer 2-->
+            <!--wrong-->
             <RadioButton
                 android:id="@+id/q2_ans1"
                 android:layout_width="wrap_content"
@@ -48,6 +50,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <!--answer 3-->
+            <!--wrong-->
             <RadioButton
                 android:id="@+id/q2_ans2"
                 android:layout_width="wrap_content"
@@ -59,6 +62,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <!--answer 4-->
+            <!--wrong-->
             <RadioButton
                 android:id="@+id/q2_ans3"
                 android:layout_width="wrap_content"
