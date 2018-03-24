@@ -56,19 +56,19 @@ public class MainActivity extends AppCompatActivity {
                     score++;
                     break;
                 }
-            case R.id.q1_ans1 :
+            case R.id.q1_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
                     break;
                 }
-            case  R.id.q1_ans2:
+            case R.id.q1_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
                     break;
                 }
-            case  R.id.q1_ans3:
+            case R.id.q1_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
@@ -84,29 +84,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q2_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_3);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q2_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_3);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q2_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_3);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q2_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_3);
                     score++;
                     break;
                 }
@@ -120,29 +120,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q3_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_4);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q3_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_4);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q3_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_4);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q3_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_4);
                     score++;
                     break;
                 }
@@ -156,29 +156,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q4_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_5);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q4_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_5);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q4_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_5);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q4_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_5);
                     score++;
                     break;
                 }
@@ -192,29 +192,30 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q5_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_6);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q5_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_6);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q5_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_6);
                     break;
                 }
 
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q5_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_6);
                     score++;
                     break;
                 }
@@ -228,29 +229,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q6_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_7);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q6_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_7);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q6_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_7);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q6_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_7);
                     score++;
                     break;
                 }
@@ -264,29 +265,30 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q7_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_8);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q7_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_8);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q7_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_8);
                     break;
                 }
 
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q7_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_8);
                     score++;
                     break;
                 }
@@ -300,29 +302,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q8_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_9);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q8_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_9);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q8_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_9);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q8_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_9);
                     score++;
                     break;
                 }
@@ -336,29 +338,29 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q9_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_10);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q9_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_10);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q9_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.question_10);
                     break;
                 }
-
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q9_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_10);
                     score++;
                     break;
                 }
@@ -372,29 +374,30 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q1_ans1:
+            case R.id.q10_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.score);
                     break;
                 }
-            case R.id.q1_ans2:
+            case R.id.q10_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.score);
                     break;
                 }
-            case R.id.q1_ans3:
+            case R.id.q10_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
+                    setContentView(R.layout.score);
                     break;
                 }
 
                 //answer correct = 1 point
-            case R.id.q1_ans_correct:
+            case R.id.q10_ans_correct:
                 if (checked) {
-                    setContentView(R.layout.question_2);
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.score);
                     score++;
                     break;
                 }
