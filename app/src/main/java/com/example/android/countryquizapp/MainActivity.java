@@ -3,11 +3,13 @@ package com.example.android.countryquizapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String userName;
     int score;
 
     @Override
@@ -19,7 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
     //start quiz
     public void startQuiz(View view) {
-        setContentView(R.layout.question_1);
+        EditText enteredName = (EditText) findViewById(R.id.customer_name);
+        userName = enteredName.getText().toString();
+        if (userName.equals("")) {
+            Toast.makeText(this, getString(R.string.toast_no_name), Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            setContentView(R.layout.question_1);
+        }
     }
 
     public void tryAgain(View view){
