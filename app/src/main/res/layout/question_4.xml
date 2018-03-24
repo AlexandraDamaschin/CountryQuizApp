@@ -81,7 +81,7 @@
             android:layout_marginTop="@dimen/marginTop_image"
             android:src="@drawable/quiz_picture" />
 
-        <!--progress bar 20-->
+        <!--progress bar 40-->
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"

@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToFifthQuestion"
+                android:onClick="goToScore"
                 android:text="@string/q10_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
 

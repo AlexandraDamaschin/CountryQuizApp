@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
                 android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
+                android:onClick="goToTenQuestion"
                 android:text="@string/q9_ans_correct"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -80,7 +80,7 @@
             android:layout_marginTop="@dimen/marginTop_image"
             android:src="@drawable/quiz_picture" />
 
-        <!--progress bar 10-->
+        <!--progress bar 90-->
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
