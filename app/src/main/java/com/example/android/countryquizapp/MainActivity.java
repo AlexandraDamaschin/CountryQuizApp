@@ -37,12 +37,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_1);
     }
 
-    //    wrong answer = no points
-//    public void wrongAnswer(View view) {
-//        Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-//        setContentView(R.layout.question_2);
-//    }
-
     //first question
     //if answer is right increase score and go to second question
     public void goToSecondQuestion(View view) {
