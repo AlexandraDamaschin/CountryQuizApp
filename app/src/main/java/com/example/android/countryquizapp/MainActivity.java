@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //    wrong answer = no points
-    public void wrongAnswer(View view) {
-        Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-        setContentView(R.layout.question_2);
-    }
+//    public void wrongAnswer(View view) {
+//        Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+//        setContentView(R.layout.question_2);
+//    }
 
     //first question
     //if answer is right increase score and go to second question
@@ -51,11 +51,24 @@ public class MainActivity extends AppCompatActivity {
             //answer correct = 1 point
             case R.id.q1_ans_correct:
                 if (checked) {
+                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
                     score++;
                     break;
                 }
-            case R.id.q1_ans1 | R.id.q1_ans2 | R.id.q1_ans3:
+            case R.id.q1_ans1 :
+                if (checked) {
+                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_2);
+                    break;
+                }
+            case  R.id.q1_ans2:
+                if (checked) {
+                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.question_2);
+                    break;
+                }
+            case  R.id.q1_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.question_2);
