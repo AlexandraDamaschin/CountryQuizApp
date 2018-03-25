@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="question_textSize">25dp</dimen>
+    <dimen name="question_textSize">25sp</dimen>
     <dimen name="margin_radioButton">15dp</dimen>
     <dimen name="marginTop_radioButtonsGroup">5dp</dimen>
     <dimen name="height_image">220dp</dimen>

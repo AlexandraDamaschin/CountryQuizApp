@@ -3,6 +3,7 @@ package com.example.android.countryquizapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -17,9 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.score);
-        displayScore(score);
     }
-
 
     //start quiz
     public void startQuiz(View view) {
@@ -401,8 +400,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // score
-    public void displayScore(int score) {
+    public void displayScore() {
         TextView finalScore = findViewById(R.id.score_text);
         finalScore.setText(String.valueOf(score));
+    }
+
+    public void goToFinalQuestion(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+            //if sea case
+            case R.id.sea:
+                if (checked)
+                    setContentView(R.layout.score);
+                //if mountain case
+            case R.id.mountain:
+                if (checked)
+                    setContentView(R.layout.score);
+                //if city case
+            case R.id.city:
+                if (checked)
+                    setContentView(R.layout.score);
+                break;
+        }
+        }
     }
 }

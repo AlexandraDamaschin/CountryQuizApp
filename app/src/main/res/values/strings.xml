@@ -58,4 +58,8 @@
     <string name="correct_answer">Correct answer</string>
     <string name="score">Your score is</string>
     <string name="score_text">0</string>
+    <string name="final_question">What a perfect day looks like for you?</string>
+    <string name="sea">A day at the ocean breeze</string>
+    <string name="mountain">A refreshing day at the top of the mountain</string>
+    <string name="city">A busy day in the city</string>
 </resources>

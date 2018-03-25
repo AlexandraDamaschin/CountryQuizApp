@@ -13,25 +13,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <!--score text-->
-            <TextView
-                android:id="@+id/score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/score"
-                android:textColor="#000000"
-                android:textSize="30dp" />
 
-            <!--current text-->
-            <Button
-                android:id="@+id/score_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="displayScore"
-                android:text="@string/score_text" />
+            <TextView
+                android:id="@+id/question_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/final_question"
+                android:textSize="@dimen/question_textSize" />
+
+            <CheckBox
+                android:id="@+id/sea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToFinalQuestion"
+                android:text="@string/sea"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/mountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToFinalQuestion"
+                android:text="@string/mountain"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToFinalQuestion"
+                android:text="@string/city"
+                android:textAppearance="?android:textAppearanceMedium" />
+
 
         </LinearLayout>
+
 
         <!--image as background-->
         <ImageView
@@ -50,16 +67,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="430dp"
-            android:onClick="tryAgain"
-            android:text="@string/try_again" />
+            android:text="@string/try_again"
+            android:onClick="tryAgain"/>
 
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
             android:indeterminate="false"
+            android:layout_marginTop="480dp"
             android:max="100"
             android:progress="100" />
 
