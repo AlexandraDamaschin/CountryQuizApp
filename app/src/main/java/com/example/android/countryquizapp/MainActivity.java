@@ -400,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // score
-    public void displayScore() {
+    public void displayScore(View view) {
         TextView finalScore = findViewById(R.id.score_text);
         finalScore.setText(String.valueOf(score));
     }
@@ -424,7 +424,6 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     setContentView(R.layout.score);
                 break;
-        }
         }
     }
 }
