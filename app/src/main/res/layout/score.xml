@@ -37,8 +37,8 @@
         <ImageView
             android:id="@+id/photo_love_travel"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:layout_marginTop="100dp"
+            android:layout_height="@dimen/score_height"
+            android:layout_marginTop="@dimen/score_margin"
             android:scaleType="centerInside"
             android:src="@drawable/score">
 
@@ -53,15 +53,6 @@
             android:onClick="tryAgain"
             android:text="@string/try_again" />
 
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
-            android:indeterminate="false"
-            android:max="100"
-            android:progress="100" />
 
     </RelativeLayout>
 </ScrollView>

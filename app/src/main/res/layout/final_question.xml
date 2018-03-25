@@ -45,8 +45,6 @@
                 android:onClick="goToFinalQuestion"
                 android:text="@string/city"
                 android:textAppearance="?android:textAppearanceMedium" />
-
-
         </LinearLayout>
 
         <ImageView

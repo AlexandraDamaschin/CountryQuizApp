@@ -7,4 +7,6 @@
     <dimen name="marginTop_image">10dp</dimen>
     <dimen name="marginTop_progressBar">30dp</dimen>
     <dimen name="image_margin">220dp</dimen>
+    <dimen name="score_height">300dp</dimen>
+    <dimen name="score_margin">100dp</dimen>
 </resources>
