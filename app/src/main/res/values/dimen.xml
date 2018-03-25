@@ -6,4 +6,5 @@
     <dimen name="height_image">220dp</dimen>
     <dimen name="marginTop_image">10dp</dimen>
     <dimen name="marginTop_progressBar">30dp</dimen>
+    <dimen name="image_margin">220dp</dimen>
 </resources>

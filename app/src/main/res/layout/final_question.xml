@@ -15,11 +15,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/question_seven"
+                android:id="@+id/final_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="@string/final_question"
+                android:textAlignment="center"
                 android:textSize="@dimen/question_textSize" />
 
             <CheckBox
@@ -49,36 +49,11 @@
 
         </LinearLayout>
 
-
-        <!--image as background-->
         <ImageView
-            android:id="@+id/photo_love_travel"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:layout_marginTop="100dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/quiz_time">
-
-        </ImageView>
-
-        <!--try again-->
-        <Button
-            android:id="@+id/start_quiz"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
-            android:text="@string/try_again"
-            android:onClick="tryAgain"/>
-
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:indeterminate="false"
-            android:layout_marginTop="480dp"
-            android:max="100"
-            android:progress="100" />
+            android:layout_height="@dimen/height_image"
+            android:layout_marginTop="@dimen/image_margin"
+            android:src="@drawable/quiz_picture" />
 
     </RelativeLayout>
 </ScrollView>
