@@ -40,7 +40,7 @@
             android:layout_height="300dp"
             android:layout_marginTop="100dp"
             android:scaleType="centerInside"
-            android:src="@drawable/quiz_time">
+            android:src="@drawable/score">
 
         </ImageView>
 
