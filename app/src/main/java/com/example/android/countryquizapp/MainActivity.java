@@ -372,19 +372,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q10_ans1:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.score);
+                    setContentView(R.layout.final_question);
                     break;
                 }
             case R.id.q10_ans2:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.score);
+                    setContentView(R.layout.final_question);
                     break;
                 }
             case R.id.q10_ans3:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.score);
+                    setContentView(R.layout.final_question);
                     break;
                 }
 
@@ -392,7 +392,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q10_ans_correct:
                 if (checked) {
                     Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.score);
+                    setContentView(R.layout.final_question);
                     score++;
                     break;
                 }
@@ -405,6 +405,7 @@ public class MainActivity extends AppCompatActivity {
         finalScore.setText(String.valueOf(score));
     }
 
+    //final question
     public void goToFinalQuestion(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
