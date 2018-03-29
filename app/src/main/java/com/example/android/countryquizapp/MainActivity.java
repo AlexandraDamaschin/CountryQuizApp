@@ -396,23 +396,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which checkbox was clicked
         switch (view.getId()) {
-            //if sea case
+            //if sea and mountain and city are checked
             //increase score
-            case R.id.sea:
-                if (checked)
-                    setContentView(R.layout.score);
-                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                score++;
-                //if mountain case
-                //increase score
-            case R.id.mountain:
-                if (checked)
-                    setContentView(R.layout.score);
-                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                score++;
-                //if city case
-                //increase score
-            case R.id.city:
+            case R.id.sea &R.id.mountain &R.id.city:
                 if (checked)
                     setContentView(R.layout.score);
                 Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
