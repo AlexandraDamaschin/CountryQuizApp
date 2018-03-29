@@ -413,15 +413,25 @@ public class MainActivity extends AppCompatActivity {
         // Check which checkbox was clicked
         switch (view.getId()) {
             //if sea case
+            //increase score
             case R.id.sea:
                 if (checked)
                     setContentView(R.layout.score);
+                score++;
                 //if mountain case
+                //increase score
             case R.id.mountain:
                 if (checked)
                     setContentView(R.layout.score);
+                score++;
                 //if city case
+                //increase score
             case R.id.city:
+                if (checked)
+                    setContentView(R.layout.score);
+                score++;
+                // if case nowhere
+            case R.id.nowhere:
                 if (checked)
                     setContentView(R.layout.score);
                 break;
