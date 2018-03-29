@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         EditText answerCorrect = (EditText) findViewById(R.id.q1_ans);
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
-        if (correctAnswer1.equals("India")) {
+        if (correctAnswer1.equals("India")| correctAnswer1.equals("india")| correctAnswer1.equals("INDIA")) {
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
             setContentView(R.layout.question_2);
