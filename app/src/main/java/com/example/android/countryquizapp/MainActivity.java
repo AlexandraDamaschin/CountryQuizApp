@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         EditText answerCorrect = (EditText) findViewById(R.id.q1_ans);
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
-        if (correctAnswer1.equals("India")| correctAnswer1.equals("india")| correctAnswer1.equals("INDIA")) {
+        if (correctAnswer1.equals("India") | correctAnswer1.equals("india") | correctAnswer1.equals("INDIA")) {
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
             setContentView(R.layout.question_2);
@@ -386,6 +386,7 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(View view) {
         TextView finalScore = findViewById(R.id.score_text);
         finalScore.setText(String.valueOf(score));
+        Toast.makeText(this, getString(R.string.score), Toast.LENGTH_SHORT).show();
     }
 
     //final question
@@ -400,23 +401,27 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sea:
                 if (checked)
                     setContentView(R.layout.score);
+                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
                 score++;
                 //if mountain case
                 //increase score
             case R.id.mountain:
                 if (checked)
                     setContentView(R.layout.score);
+                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
                 score++;
                 //if city case
                 //increase score
             case R.id.city:
                 if (checked)
                     setContentView(R.layout.score);
+                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
                 score++;
                 // if case nowhere
             case R.id.nowhere:
                 if (checked)
                     setContentView(R.layout.score);
+                Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
                 break;
         }
     }
