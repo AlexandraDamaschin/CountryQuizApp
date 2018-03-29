@@ -19,66 +19,29 @@
             android:textAlignment="center"
             android:textSize="@dimen/question_textSize" />
 
-        <RadioGroup
+        <EditText
+            android:id="@+id/q1_ans"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/marginTop_radioButtonsGroup"
-            android:orientation="vertical">
-
-            <!--answer 1-->
-            <!--wrong-->
-            <RadioButton
-                android:id="@+id/q1_ans1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_radioButton"
-                android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
-                android:text="@string/q1_ans1"
-                android:textAppearance="?android:textAppearanceMedium" />
-
-            <!--answer 2-->
-            <!--wrong-->
-            <RadioButton
-                android:id="@+id/q1_ans2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_radioButton"
-                android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
-                android:text="@string/q1_ans2"
-                android:textAppearance="?android:textAppearanceMedium" />
-
-            <!--answer 3-->
-            <!--correct-->
-            <RadioButton
-                android:id="@+id/q1_ans_correct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_radioButton"
-                android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
-                android:text="@string/q1_ans_correct"
-                android:textAppearance="?android:textAppearanceMedium" />
-
-            <!--answer 4-->
-            <!--wrong-->
-            <RadioButton
-                android:id="@+id/q1_ans3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_radioButton"
-                android:layout_marginStart="@dimen/margin_radioButton"
-                android:onClick="goToSecondQuestion"
-                android:text="@string/q1_ans3"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/q1_ans"
+            android:inputType="textMultiLine" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
             android:src="@drawable/quiz_picture" />
+
+        <!--if answer is correct go to next question and increase score-->
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:text="@string/goToNext"
+            android:onClick="goToSecondQuestion"/>
+
 
         <!--progress bar 10-->
         <ProgressBar

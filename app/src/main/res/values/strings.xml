@@ -12,10 +12,7 @@
     <string name="q_8">In what country is the Great Pyramid of Giza found?</string>
     <string name="q_9">Leonardo da Vinci was born in what country?</string>
     <string name="q_10">In terms of land area, what is the largest country in the world?</string>
-    <string name="q1_ans_correct">India</string>
-    <string name="q1_ans1">Spain</string>
-    <string name="q1_ans2">USA</string>
-    <string name="q1_ans3">Scotland</string>
+    <string name="q1_ans">Your answer</string>
     <string name="q2_ans_correct">Scotland</string>
     <string name="q2_ans1">France</string>
     <string name="q2_ans2">Ireland</string>
@@ -63,4 +60,5 @@
     <string name="mountain">A refreshing day at the top of the mountain</string>
     <string name="city">A busy day in the city</string>
     <string name="nowhere">A lazy day home</string>
+    <string name="goToNext">Next question</string>
 </resources>

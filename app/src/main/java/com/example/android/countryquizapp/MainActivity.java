@@ -39,38 +39,48 @@ public class MainActivity extends AppCompatActivity {
     //first question
     //if answer is right increase score and go to second question
     public void goToSecondQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            //answer correct = 1 point
-            case R.id.q1_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    score++;
-                    break;
-                }
-            case R.id.q1_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    break;
-                }
-            case R.id.q1_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    break;
-                }
-            case R.id.q1_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_2);
-                    break;
-                }
+//        // Is the button now checked?
+//        boolean checked = ((RadioButton) view).isChecked();
+//        // Check which radio button was clicked
+//        switch (view.getId()) {
+//            //answer correct = 1 point
+//            case R.id.q1_ans_correct:
+//                if (checked) {
+//                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+//                    setContentView(R.layout.question_2);
+//                    score++;
+//                    break;
+//                }
+//            case R.id.q1_ans1:
+//                if (checked) {
+//                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+//                    setContentView(R.layout.question_2);
+//                    break;
+//                }
+//            case R.id.q1_ans2:
+//                if (checked) {
+//                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+//                    setContentView(R.layout.question_2);
+//                    break;
+//                }
+//            case R.id.q1_ans3:
+//                if (checked) {
+//                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+//                    setContentView(R.layout.question_2);
+//                    break;
+//                }
+
+        EditText enteredName = (EditText) findViewById(R.id.customer_name);
+        userName = enteredName.getText().toString();
+        if (userName.equals("")) {
+            Toast.makeText(this, getString(R.string.toast_no_name), Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            setContentView(R.layout.question_1);
         }
     }
+
+}
 
     //second question
     //if answer is right increase score and go to third question
