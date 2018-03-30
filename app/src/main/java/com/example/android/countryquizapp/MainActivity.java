@@ -11,9 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String userName;
     int score;
-    private String correctAnswer1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     //start quiz
     public void startQuiz(View view) {
+        String userName;
         EditText enteredName = (EditText) findViewById(R.id.customer_name);
         userName = enteredName.getText().toString();
         if (userName.equals("")) {
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     //if answer is right increase score and go to second question
     //India correct answer
     public void goToSecondQuestion(View view) {
+        String correctAnswer1;
         EditText answerCorrect = (EditText) findViewById(R.id.q1_ans);
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
@@ -398,7 +398,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             //if sea and mountain and city are checked
             //increase score
-            case R.id.sea &R.id.mountain &R.id.city:
+            case R.id.sea & R.id.mountain & R.id.city:
                 if (checked)
                     setContentView(R.layout.score);
                 Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
