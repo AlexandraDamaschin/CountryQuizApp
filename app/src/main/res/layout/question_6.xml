@@ -40,7 +40,6 @@
             <!--answer 2-->
             <!--wrong-->
             <RadioButton
-                android:id="@+id/q6_ans1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
@@ -52,7 +51,6 @@
             <!--answer 3-->
             <!--wrong-->
             <RadioButton
-                android:id="@+id/q6_ans2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
@@ -64,7 +62,6 @@
             <!--answer 4-->
             <!--wrong-->
             <RadioButton
-                android:id="@+id/q6_ans3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_radioButton"
@@ -79,7 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
-            android:src="@drawable/quiz_picture" />
+            android:src="@drawable/quiz_picture"
+            android:contentDescription="@string/image_null"/>
 
         <!--progress bar 60-->
         <ProgressBar
@@ -89,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop_progressBar"
             android:indeterminate="false"
-            android:max="100"
+            android:max="110"
             android:progress="60" />
 
     </LinearLayout>

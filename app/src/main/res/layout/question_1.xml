@@ -23,7 +23,7 @@
             android:id="@+id/q1_ans"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/marginTop_image"
             android:hint="@string/q1_ans"
             android:inputType="textMultiLine" />
 
@@ -31,27 +31,26 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
+            android:contentDescription="@string/image_null"
             android:src="@drawable/quiz_picture" />
 
         <!--if answer is correct go to next question and increase score-->
         <Button
-            android:id="@+id/next_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="43dp"
-            android:text="@string/goToNext"
-            android:onClick="goToSecondQuestion"/>
+            android:onClick="goToSecondQuestion"
+            android:text="@string/goToNext" />
 
 
         <!--progress bar 10-->
         <ProgressBar
-            android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop_progressBar"
             android:indeterminate="false"
-            android:max="100"
+            android:max="110"
             android:progress="10" />
 
     </LinearLayout>

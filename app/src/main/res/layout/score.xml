@@ -41,7 +41,8 @@
             android:layout_height="@dimen/score_height"
             android:layout_marginTop="@dimen/score_margin"
             android:scaleType="centerInside"
-            android:src="@drawable/score">
+            android:src="@drawable/score"
+            android:contentDescription="@string/image_null">
 
         </ImageView>
 
