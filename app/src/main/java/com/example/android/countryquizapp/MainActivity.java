@@ -374,24 +374,19 @@ public class MainActivity extends AppCompatActivity {
 
     //final question
     public void goToFinalQuestion(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
 
-        // Check which checkbox was clicked
-        switch (view.getId()) {
-            //if sea and mountain and city are checked
-            //increase score
-            case R.id.sea & R.id.mountain & R.id.city:
-                if (checked)
-                    setContentView(R.layout.score);
-                Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                score++;
-                // if case nowhere
-            case R.id.nowhere:
-                if (checked)
-                    setContentView(R.layout.score);
-                Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                break;
+        CheckBox sea = (CheckBox) findViewById(R.id.sea);
+        CheckBox mountain = (CheckBox) findViewById(R.id.mountain);
+        CheckBox city = (CheckBox) findViewById(R.id.city);
+
+        //if all of them are checked increase score
+        if (sea.isChecked() && mountain.isChecked() && city.isChecked()) {
+            setContentView(R.layout.score);
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
+        } else {
+            setContentView(R.layout.score);
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
         }
     }
 }
