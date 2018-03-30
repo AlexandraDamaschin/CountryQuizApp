@@ -44,15 +44,15 @@ public class MainActivity extends AppCompatActivity {
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
         //equalsIgnoreCase compare just the content of the string
-        if (correctAnswer1.equalsIgnoreCase("India") ) {
+        if (correctAnswer1.equalsIgnoreCase("India")) {
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
-            setContentView(R.layout.question_2);
         } else {
             //else pop up a message and go to next question
             Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-            setContentView(R.layout.question_2);
         }
+        //no matter what happens, you still go to the next question
+        setContentView(R.layout.question_2);
     }
 
     //second question
