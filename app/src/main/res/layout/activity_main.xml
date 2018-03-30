@@ -13,7 +13,7 @@
             android:id="@+id/customer_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/marginTop_image"
             android:hint="@string/customerName"
             android:inputType="textMultiLine"
             android:windowSoftInputMode="adjustPan" />
@@ -23,32 +23,30 @@
         <ImageView
             android:id="@+id/photo_love_travel"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:layout_marginTop="100dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginTop="@dimen/image_marginTop"
             android:scaleType="centerInside"
             android:src="@drawable/quiz_time"
-            android:contentDescription="@null">
+            android:contentDescription="@string/image_null">
 
         </ImageView>
 
         <!--if name is provided start quiz-->
         <Button
-            android:id="@+id/start_quiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="@dimen/button_marginTop"
             android:onClick="startQuiz"
             android:text="@string/start_quiz" />
 
         <ProgressBar
-            android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="@dimen/progressBar_marginTop"
             android:indeterminate="false"
-            android:max="100"
-            android:progress="1" />
+            android:max="110"
+            android:progress="0" />
 
     </RelativeLayout>
 </ScrollView>

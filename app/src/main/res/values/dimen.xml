@@ -10,4 +10,8 @@
     <dimen name="score_height">300dp</dimen>
     <dimen name="score_margin">100dp</dimen>
     <dimen name="score_size">30sp</dimen>
+    <dimen name="image_height">300dp</dimen>
+    <dimen name="image_marginTop">100dp</dimen>
+    <dimen name="button_marginTop">430dp</dimen>
+    <dimen name="progressBar_marginTop">480dp</dimen>
 </resources>

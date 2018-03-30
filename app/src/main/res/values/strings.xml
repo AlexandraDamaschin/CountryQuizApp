@@ -62,4 +62,5 @@
     <string name="nowhere">A lazy day home</string>
     <string name="goToNext">Next question</string>
     <string name="partial_answer">Your answer is correct but not complete</string>
+    <string name="image_null">Image unavailable</string>
 </resources>
