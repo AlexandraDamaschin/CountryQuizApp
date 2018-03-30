@@ -71,7 +71,6 @@
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"

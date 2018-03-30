@@ -71,13 +71,12 @@
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_image"
             android:layout_marginTop="@dimen/marginTop_image"
-            android:src="@drawable/quiz_picture"
-            android:contentDescription="@string/image_null"/>
+            android:contentDescription="@string/image_null"
+            android:src="@drawable/quiz_picture" />
 
         <!--progress bar 60-->
         <ProgressBar

@@ -40,9 +40,9 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/score_height"
             android:layout_marginTop="@dimen/score_margin"
+            android:contentDescription="@string/image_null"
             android:scaleType="centerInside"
-            android:src="@drawable/score"
-            android:contentDescription="@string/image_null">
+            android:src="@drawable/score">
 
         </ImageView>
 
