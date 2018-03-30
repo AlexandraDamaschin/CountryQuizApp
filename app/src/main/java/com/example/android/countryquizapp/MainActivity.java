@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.score);
+        setContentView(R.layout.activity_main);
     }
 
     //start quiz
@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         userName = enteredName.getText().toString();
         if (userName.equals("")) {
             Toast.makeText(this, getString(R.string.toast_no_name), Toast.LENGTH_SHORT).show();
-            return;
         } else {
             setContentView(R.layout.question_1);
         }
@@ -44,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         EditText answerCorrect = (EditText) findViewById(R.id.q1_ans);
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
-        if (correctAnswer1.equals("India") | correctAnswer1.equals("india") | correctAnswer1.equals("INDIA")) {
+        //equalsIgnoreCase compare just the content of the string
+        if (correctAnswer1.equalsIgnoreCase("India") ) {
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
             setContentView(R.layout.question_2);
