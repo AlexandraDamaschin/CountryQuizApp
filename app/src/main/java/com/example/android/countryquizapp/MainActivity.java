@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     //start quiz
     public void startQuiz(View view) {
+        //variable needed
         String userName;
+        //find text entered by id
         EditText enteredName = (EditText) findViewById(R.id.customer_name);
         userName = enteredName.getText().toString();
         if (userName.equals("")) {
@@ -39,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
     //if answer is right increase score and go to second question
     //India correct answer
     public void goToSecondQuestion(View view) {
+        //variable needed
         String correctAnswer1;
+        //check for the entered text by id
         EditText answerCorrect = (EditText) findViewById(R.id.q1_ans);
         correctAnswer1 = answerCorrect.getText().toString();
         //if correct answer increase score and go to next question
@@ -64,312 +68,174 @@ public class MainActivity extends AppCompatActivity {
         //increase score
         if (correctAnswer.isChecked()) {
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-            setContentView(R.layout.question_3);
             score++;
         }
         //toast msg
         else {
             Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-            setContentView(R.layout.question_3);
         }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_3);
     }
 
     //third question
     //if answer right increase score and to to fourth question
     public void goToFourthQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q3_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_4);
-                    break;
-                }
-            case R.id.q3_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_4);
-                    break;
-                }
-            case R.id.q3_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_4);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q3_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_4);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q3_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_4);
     }
 
     //fourth question
     //if answer right increase score and to to fifth question
     public void goToFifthQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q4_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_5);
-                    break;
-                }
-            case R.id.q4_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_5);
-                    break;
-                }
-            case R.id.q4_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_5);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q4_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_5);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q4_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_5);
     }
 
     //fifth question
     //if answer right increase score and to to sixth question
     public void goToSixthQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q5_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_6);
-                    break;
-                }
-            case R.id.q5_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_6);
-                    break;
-                }
-            case R.id.q5_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_6);
-                    break;
-                }
-
-                //answer correct = 1 point
-            case R.id.q5_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_6);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q5_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_6);
     }
 
     //sixth question
     //if answer right increase score and to to seven question
     public void goToSevenQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q6_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_7);
-                    break;
-                }
-            case R.id.q6_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_7);
-                    break;
-                }
-            case R.id.q6_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_7);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q6_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_7);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q6_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_7);
     }
 
     //seven question
     //if answer right increase score and to to eight question
     public void goToEightQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q7_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_8);
-                    break;
-                }
-            case R.id.q7_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_8);
-                    break;
-                }
-            case R.id.q7_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_8);
-                    break;
-                }
-
-                //answer correct = 1 point
-            case R.id.q7_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_8);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q7_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_8);
     }
 
     //eight question
     //if answer right increase score and to to nine question
     public void goToNineQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q8_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_9);
-                    break;
-                }
-            case R.id.q8_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_9);
-                    break;
-                }
-            case R.id.q8_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_9);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q8_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_9);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q8_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_9);
     }
 
     //nine question
     //if answer right increase score and to to ten question
     public void goToTenQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q9_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_10);
-                    break;
-                }
-            case R.id.q9_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_10);
-                    break;
-                }
-            case R.id.q9_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_10);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q9_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_10);
-                    score++;
-                    break;
-                }
+
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q9_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.question_10);
     }
 
     //ten question
     //if answer right increase score and to to seven question
     public void goToScore(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q10_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.final_question);
-                    break;
-                }
-            case R.id.q10_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.final_question);
-                    break;
-                }
-            case R.id.q10_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.final_question);
-                    break;
-                }
-
-                //answer correct = 1 point
-            case R.id.q10_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.final_question);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q10_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            score++;
         }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+        }
+        //no matter what happens you still go to next question
+        setContentView(R.layout.final_question);
     }
 
     // score
     public void displayScore(View view) {
         TextView finalScore = findViewById(R.id.score_text);
         finalScore.setText(String.valueOf(score));
-        Toast.makeText(this, getString(R.string.score), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.score), score).show();
     }
 
     //final question
@@ -384,6 +250,13 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.score);
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
+        } else if (
+                (sea.isChecked() && mountain.isChecked()) ||
+                        (mountain.isChecked() && city.isChecked()) ||
+                        (city.isChecked() && sea.isChecked())
+                ) {
+            setContentView(R.layout.score);
+            Toast.makeText(this, getString(R.string.partial_answer), Toast.LENGTH_SHORT).show();
         } else {
             setContentView(R.layout.score);
             Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
