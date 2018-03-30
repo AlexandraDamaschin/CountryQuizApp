@@ -1,5 +1,4 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,21 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <!--name as input -->
+        <EditText
+            android:id="@+id/customer_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!--name as input -->
-            <EditText
-                android:id="@+id/customer_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/customerName"
-                android:inputType="textMultiLine" />
-
-        </LinearLayout>
+            android:layout_marginTop="10dp"
+            android:hint="@string/customerName"
+            android:inputType="textMultiLine"
+            android:windowSoftInputMode="adjustPan" />
 
 
         <!--image as background-->
@@ -33,7 +26,8 @@
             android:layout_height="300dp"
             android:layout_marginTop="100dp"
             android:scaleType="centerInside"
-            android:src="@drawable/quiz_time">
+            android:src="@drawable/quiz_time"
+            android:contentDescription="@null">
 
         </ImageView>
 
@@ -43,16 +37,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="430dp"
-            android:text="@string/start_quiz"
-            android:onClick="startQuiz"/>
+            android:onClick="startQuiz"
+            android:text="@string/start_quiz" />
 
         <ProgressBar
             android:id="@+id/progress_bar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:indeterminate="false"
             android:layout_marginTop="480dp"
+            android:indeterminate="false"
             android:max="100"
             android:progress="1" />
 
