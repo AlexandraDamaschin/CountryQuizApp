@@ -58,36 +58,19 @@ public class MainActivity extends AppCompatActivity {
     //second question
     //if answer is right increase score and go to third question
     public void goToThirdQuestion(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.q2_ans1:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_3);
-                    break;
-                }
-            case R.id.q2_ans2:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_3);
-                    break;
-                }
-            case R.id.q2_ans3:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_3);
-                    break;
-                }
-                //answer correct = 1 point
-            case R.id.q2_ans_correct:
-                if (checked) {
-                    Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.question_3);
-                    score++;
-                    break;
-                }
+        //find the correct answer button checked
+        RadioButton correctAnswer = (RadioButton) findViewById(R.id.q2_ans_correct);
+        //if the correct answer is checked
+        //increase score
+        if (correctAnswer.isChecked()) {
+            Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
+            setContentView(R.layout.question_3);
+            score++;
+        }
+        //toast msg
+        else {
+            Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
+            setContentView(R.layout.question_3);
         }
     }
 
