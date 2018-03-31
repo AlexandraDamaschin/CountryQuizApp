@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -34,11 +33,11 @@
             android:contentDescription="@string/image_null"
             android:src="@drawable/quiz_picture" />
 
-        <!--if answer is correct go to next question and increase score-->
+        <!--go to next question -->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="43dp"
+            android:layout_marginTop="@dimen/button_next_q1"
             android:onClick="goToSecondQuestion"
             android:text="@string/goToNext" />
 
@@ -54,5 +53,4 @@
             android:progress="10" />
 
     </LinearLayout>
-
 </ScrollView>

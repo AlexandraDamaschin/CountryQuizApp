@@ -18,18 +18,15 @@
             android:inputType="textMultiLine"
             android:windowSoftInputMode="adjustPan" />
 
-
         <!--image as background-->
         <ImageView
             android:id="@+id/photo_love_travel"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/image_height"
             android:layout_marginTop="@dimen/image_marginTop"
+            android:contentDescription="@string/image_null"
             android:scaleType="centerInside"
-            android:src="@drawable/quiz_time"
-            android:contentDescription="@string/image_null">
-
-        </ImageView>
+            android:src="@drawable/quiz_time" />
 
         <!--if name is provided start quiz-->
         <Button
@@ -39,6 +36,7 @@
             android:onClick="startQuiz"
             android:text="@string/start_quiz" />
 
+        <!--progress bar 0-->
         <ProgressBar
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
