@@ -27,7 +27,6 @@
                 android:id="@+id/sea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToFinalQuestion"
                 android:text="@string/sea"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -36,7 +35,6 @@
                 android:id="@+id/mountain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToFinalQuestion"
                 android:text="@string/mountain"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -45,7 +43,6 @@
                 android:id="@+id/city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToFinalQuestion"
                 android:text="@string/city"
                 android:textAppearance="?android:textAppearanceMedium" />
 
@@ -54,9 +51,14 @@
                 android:id="@+id/nowhere"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToFinalQuestion"
                 android:text="@string/nowhere"
                 android:textAppearance="?android:textAppearanceMedium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToFinalQuestion"
+                android:text="@string/finish_quiz" />
 
         </LinearLayout>
 

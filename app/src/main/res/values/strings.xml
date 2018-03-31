@@ -53,7 +53,7 @@
     <string name="try_again">Try again!</string>
     <string name="toast_no_name">Please provide your name</string>
     <string name="correct_answer">Correct answer</string>
-    <string name="score">Your score is</string>
+    <string name="score">Your score is </string>
     <string name="score_text">Click me to find your score!</string>
     <string name="final_question">What a perfect day looks like for you?</string>
     <string name="sea">A day at the ocean breeze</string>
@@ -63,4 +63,5 @@
     <string name="goToNext">Next question</string>
     <string name="partial_answer">Your answer is correct but not complete</string>
     <string name="image_null">Image unavailable</string>
+    <string name="finish_quiz">Finish quiz</string>
 </resources>

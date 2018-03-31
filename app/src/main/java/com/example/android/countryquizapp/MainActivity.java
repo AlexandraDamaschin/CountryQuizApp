@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(View view) {
         TextView finalScore = findViewById(R.id.score_text);
         finalScore.setText(String.valueOf(score));
-        Toast.makeText(this, getString(R.string.score), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.score) + score,Toast.LENGTH_SHORT).show();
     }
 
     //final question
