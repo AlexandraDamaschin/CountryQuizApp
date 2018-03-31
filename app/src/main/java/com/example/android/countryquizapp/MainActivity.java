@@ -250,13 +250,6 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.score);
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
-        } else if (
-                (sea.isChecked() && mountain.isChecked()) ||
-                        (mountain.isChecked() && city.isChecked()) ||
-                        (city.isChecked() && sea.isChecked())
-                ) {
-            setContentView(R.layout.score);
-            Toast.makeText(this, getString(R.string.partial_answer), Toast.LENGTH_SHORT).show();
         } else {
             setContentView(R.layout.score);
             Toast.makeText(this, getString(R.string.wrong_answer), Toast.LENGTH_SHORT).show();
