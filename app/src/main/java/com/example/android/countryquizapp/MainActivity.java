@@ -244,9 +244,10 @@ public class MainActivity extends AppCompatActivity {
         CheckBox sea = (CheckBox) findViewById(R.id.sea);
         CheckBox mountain = (CheckBox) findViewById(R.id.mountain);
         CheckBox city = (CheckBox) findViewById(R.id.city);
+        CheckBox nowhere = (CheckBox) findViewById(R.id.nowhere);
 
         //if all of them are checked increase score
-        if (sea.isChecked() && mountain.isChecked() && city.isChecked()) {
+        if (sea.isChecked() && mountain.isChecked() && city.isChecked() && !nowhere.isChecked()) {
             setContentView(R.layout.score);
             Toast.makeText(this, getString(R.string.correct_answer), Toast.LENGTH_SHORT).show();
             score++;
